@@ -20,6 +20,7 @@ app.get('/tasks', (req, res) => {
 
 app.get('/task-list', (req, res) => {
     res.render('task-list', {
+        title : 'Technologies',
         taskItems: tasks
     });
 });
