@@ -1,2 +1,2 @@
 module.exports = ["NodeJS","Angular","ReactJS","Dart and Flutter",
-"Ethical Hacking"];
+"Ethical Hacking","Machine Learning"];

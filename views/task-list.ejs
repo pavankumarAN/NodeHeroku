@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%=title%></title>
-</head>
-<body>
-    <h1><%=title%></h1>
-    <%= taskItems%>
-    <hr/>
+<% include shared/header %>
 
+<div class="row">
+<div class="col col-md-4">
+    
+    <ul class="list-group">
     <% for(let i=0;  i<taskItems.length; i++) {%>
-    <ul>
-    <li><%=taskItems[i]%></li>
-    </ul>
+    <li class="list-group-item"><%=taskItems[i]%></li>
     <%}%>
-</body>
-</html>
+    </ul>
+    </div>
+    </div>
+    <%include shared/footer%>

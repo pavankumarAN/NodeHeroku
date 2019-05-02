@@ -20,11 +20,15 @@ app.get('/tasks', (req, res) => {
 
 app.get('/task-list', (req, res) => {
     res.render('task-list', {
-        title : 'Technologies',
+        title: 'Technologies', 
         taskItems: tasks
     });
 });
-
+app.get('/add-task',(req,res) => {
+    res.render('add-task',{
+        title : 'Add task'
+    });
+});
 app.get('/get-random-tasks', (req, res) => {
     const randomtasks = tasks[Math.floor(Math.random() * tasks.length)];
     res.send(randomtasks);
